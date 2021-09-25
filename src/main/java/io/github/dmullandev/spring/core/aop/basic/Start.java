@@ -10,7 +10,10 @@ public class Start {
 
 		ApplicationContext appContext = new AnnotationConfigApplicationContext(CalculatorConfiguration.class);
 		appContext.getBean("arithmeticCalculator", IBasicCalculator.class).multiplication(2, 5);
-		appContext.getBean("arithmeticCalculator", IBasicCalculator.class).addition(2, 9);
+		// appContext.getBean("arithmeticCalculator",
+		// IBasicCalculator.class).addition(2, 9);
+		// appContext.getBean("arithmeticCalculator",
+		// IBasicCalculator.class).division(5, 0);
 	}
 
 }
